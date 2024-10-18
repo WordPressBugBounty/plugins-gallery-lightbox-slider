@@ -87,13 +87,7 @@ The simplest way to install is to click on 'Plugins' then 'Add' and type 'Galler
 
 = How to use Gallery Lightbox Plugin? =
 
-There are no complicated instructions for using Gallery Lightbox plugin because this Lightbox plugin designed to make all easy. Please watch the following video and we believe that you will easily to understand it just in minutes :
-
-This is for WordPress with Gallery Block
-[youtube https://www.youtube.com/watch?v=NTli93b3i2I]
-
-This is for WordPress with Classic Editor
-[youtube https://www.youtube.com/watch?v=-64V-cthkes]
+There are no complicated instructions for using Gallery Lightbox plugin because this Lightbox plugin designed to make all easy. Please watch the video above and we believe that you will easily to understand it just in minutes.
 
 = How can I get support? =
 
@@ -113,17 +107,6 @@ But seriously, I just want to drink coffee for free, so help a developer out. Yo
 
 1. On Frontend
 2. On Backend
-
-== Other Notes ==
-
-= Gallery Lightbox step by step guide =
-
-There are no complicated instructions for using Gallery Lightbox plugin because this Lightbox plugin designed to make all easy. Please watch the following video and we believe that you will easily to understand it just in minutes :
-
-
-[youtube https://www.youtube.com/watch?v=NTli93b3i2I]
-
-[youtube https://www.youtube.com/watch?v=-64V-cthkes]
 
 == Upgrade Notice ==
 

@@ -1,9 +1,6 @@
 <?php
 
-
 if ( ! defined( 'ABSPATH' ) ) exit;
-
-
 
 /*-------------------------------------------------------------------------------*/
 /* Ajax Settings Page
@@ -11,29 +8,24 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function glg_ajax_save_settings() {
 	
 	$res = array();
-	
-	
+
 	// run a quick security check
-	if( ! check_ajax_referer( 'glg_form_settings', 'security' ) )
+	if( ! check_ajax_referer( 'glg_form_settings', 'security' ) || ! current_user_can( 'manage_options' ) )
 		return;
 	
 
 	if ( $_POST['fieldsdata'] ) {
 		
 		foreach ( $_POST['fieldsdata'] as $key => $val ) {
-			
-			update_option( $val['name'], esc_html( $val['value'] ) );
-			
-			}
-				
-			$res['ok'] = true;
+			update_option( sanitize_text_field( $val['name'] ), sanitize_text_field( $val['value'] ) );
+		}
+		
+		$res['ok'] = true;
 				
 	}
-		
-
-
-echo json_encode( $res );
-wp_die();
+	
+	echo json_encode( $res );
+	wp_die();
 	
 }
 
@@ -123,14 +115,14 @@ body.rtl #glg_free_plugins_page .plugin-card .desc > p {
 					case 'install':
 						if ( $status['url'] ) {
 							/* translators: 1: Plugin name and version. */
-							$action_links[] = '<a class="install-now button-secondary glg-button-install" href="' . $status['url'] . '" aria-label="' . esc_attr( sprintf( __( 'Install %s now' ), $name ) ) . '">' . __( 'Install Now' ) . '</a>';
+							$action_links[] = '<a class="install-now button-secondary glg-button-install" href="' . esc_url( $status['url'] ) . '" aria-label="' . esc_attr( sprintf( __( 'Install %s now' ), $name ) ) . '">' . __( 'Install Now' ) . '</a>';
 						}
 
 						break;
 					case 'update_available':
 						if ( $status['url'] ) {
 							/* translators: 1: Plugin name and version */
-							$action_links[] = '<a class="button glg-button-update" href="' . $status['url'] . '" aria-label="' . esc_attr( sprintf( __( 'Update %s now' ), $name ) ) . '">' . __( 'Update Now' ) . '</a>';
+							$action_links[] = '<a class="button glg-button-update" href="' . esc_url( $status['url'] ) . '" aria-label="' . esc_attr( sprintf( __( 'Update %s now' ), $name ) ) . '">' . __( 'Update Now' ) . '</a>';
 						}
 
 						break;
@@ -187,7 +179,7 @@ body.rtl #glg_free_plugins_page .plugin-card .desc > p {
 							
 							switch( $plugin["slug"] ){
 								case "easy-media-gallery" :
-								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://ghozylab.com/plugins/easy-media-gallery-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="https://ghozylab.com/plugins/easy-media-gallery-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
 								break;
 								
 								case "image-slider-widget" :
@@ -195,11 +187,11 @@ body.rtl #glg_free_plugins_page .plugin-card .desc > p {
 								break;
 								
 								case "easy-notify-lite" :
-								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://ghozylab.com/plugins/easy-notify-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="https://ghozylab.com/plugins/easy-notify-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
 								break;
 								
 								case "contact-form-lite" :
-								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://demo.ghozylab.com/plugins/easy-contact-form-plugin/contact-form-recaptcha/" target="_blank">PRO VERSION DEMO</a></li>';
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="https://demo.ghozylab.com/plugins/easy-contact-form-plugin/contact-form-recaptcha/" target="_blank">PRO VERSION DEMO</a></li>';
 								break;
 
 								case "page-builder-wp" :
@@ -269,7 +261,7 @@ $.fn.glgReOrder = function(array) {
 
 jQuery(document).ready(function($) {
 	
-	var theListsglg = ['page-builder-wp', 'easy-media-gallery', 'contact-form-lite', 'feed-instagram-lite', 'image-slider-widget', 'gallery-lightbox-slider', 'image-carousel','icon', 'easy-notify-lite'];
+	var theListsglg = ['luvre', 'page-builder-wp', 'easy-media-gallery', 'contact-form-lite', 'feed-instagram-lite', 'image-slider-widget', 'gallery-lightbox-slider', 'image-carousel','icon', 'easy-notify-lite'];
 	
 	$('#the-list').glgReOrder(theListsglg);
 	
@@ -298,14 +290,14 @@ function glg_pro_plugins_page() {
 		return;
 	
 	if ( false === ( $cache = get_transient( 'glg_premium_plugins' ) ) ) {
-		$feed = wp_remote_get( 'http://content.ghozylab.com/feed.php?c=featuredplugins', array( 'sslverify' => false ) );
+		$feed = wp_remote_get( 'https://content.ghozylab.com/feed.php?c=featuredplugins', array( 'sslverify' => false ) );
 		if ( ! is_wp_error( $feed ) ) {
 			if ( isset( $feed['body'] ) && strlen( $feed['body'] ) > 0 ) {
 				$cache = wp_remote_retrieve_body( $feed );
 				set_transient( 'glg_premium_plugins', $cache, 3600 );
 			}
 		} else {
-			$cache = '<div class="error"><p>' . __( 'There was an error retrieving the list from the server. Please try again later.', 'gallery-lightbox-slider' ) . '</div>';
+			$cache = '<div class="error"><p>' . esc_html__( 'There was an error retrieving the list from the server. Please try again later.', 'gallery-lightbox-slider' ) . '</div>';
 		}
 	}
 	

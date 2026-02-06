@@ -3,8 +3,8 @@ Contributors: GhozyLab
 Donate link: https://plasso.co/donate@ghozylab.com
 Tags: gallery, gallery lightbox, image slider, slider, image lightbox
 Requires at least: 3.3
-Tested up to: 6.6
-Stable tag: 1.0.0.41
+Tested up to: 6.9
+Stable tag: 1.0.0.43
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,8 @@ The following are other recommended plugins by the author:
 * Malaysia
 * Polish
 
+and many more...
+
 > #### **NOTE**
 > If you would like to create your own language pack or update the existing one, you can send <a href="https://codex.wordpress.org/Translating_WordPress" title="Translating WordPress" target="_blank">the text of PO and MO files</a> for <a href="https://ghozylab.com/plugins/" title="GhozyLab" target="_blank">GhozyLab</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="https://poedit.net/download" title="Download Poedit" target="_blank">Poedit</a>.
 
@@ -87,7 +89,13 @@ The simplest way to install is to click on 'Plugins' then 'Add' and type 'Galler
 
 = How to use Gallery Lightbox Plugin? =
 
-There are no complicated instructions for using Gallery Lightbox plugin because this Lightbox plugin designed to make all easy. Please watch the video above and we believe that you will easily to understand it just in minutes.
+There are no complicated instructions for using Gallery Lightbox plugin because this Lightbox plugin designed to make all easy. Please watch the following video and we believe that you will easily to understand it just in minutes :
+
+This is for WordPress with Gallery Block
+[youtube https://www.youtube.com/watch?v=NTli93b3i2I]
+
+This is for WordPress with Classic Editor
+[youtube https://www.youtube.com/watch?v=-64V-cthkes]
 
 = How can I get support? =
 
@@ -108,13 +116,31 @@ But seriously, I just want to drink coffee for free, so help a developer out. Yo
 1. On Frontend
 2. On Backend
 
+== Other Notes ==
+
+= Gallery Lightbox step by step guide =
+
+There are no complicated instructions for using Gallery Lightbox plugin because this Lightbox plugin designed to make all easy. Please watch the following video and we believe that you will easily to understand it just in minutes :
+
+
+[youtube https://www.youtube.com/watch?v=NTli93b3i2I]
+
+[youtube https://www.youtube.com/watch?v=-64V-cthkes]
+
 == Upgrade Notice ==
 
-= 1.0.0.41 =
+= 1.0.0.43 =
 
 IMPORTANT! SECURITY BUGS FIX, PLEASE UPDATE NOW!
 
 == Changelog ==
+
+= 1.0.0.43 =
+
+* Update : WordPress 6.9 compatibility
+* Update : PHP 8.5 compatibility
+* Fixed : XSS issue, thanks to patchstack.com
+* Fixed : Many other PHP and CSS clean and optimization
 
 = 1.0.0.41 =
 

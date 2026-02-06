@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Lightbox Lite\n"
+"POT-Creation-Date: 2026-01-20 12:31+0700\n"
+"PO-Revision-Date: 2026-01-20 12:32+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: gallery-lightbox-lite.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: gallery-lightbox-lite.php:89
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#: inc/functions/ajax/glg-admin-ajax.php:114
+#, php-format
+msgid "By %s"
+msgstr "%s द्वारा"
+
+#. translators: 1: Plugin name and version.
+#: inc/functions/ajax/glg-admin-ajax.php:126
+#, php-format
+msgid "Install %s now"
+msgstr "%s अभी इंस्टॉल करें"
+
+#: inc/functions/ajax/glg-admin-ajax.php:126
+msgid "Install Now"
+msgstr "अभी स्थापित करें"
+
+#. translators: 1: Plugin name and version
+#: inc/functions/ajax/glg-admin-ajax.php:133
+#, php-format
+msgid "Update %s now"
+msgstr "अभी अपडेट करें %s"
+
+#: inc/functions/ajax/glg-admin-ajax.php:133
+msgid "Update Now"
+msgstr "अब अपडेट करो"
+
+#: inc/functions/ajax/glg-admin-ajax.php:139
+msgid "This plugin is already installed and is up to date"
+msgstr "यह प्लगइन पहले से ही स्थापित है और अद्यतित है"
+
+#: inc/functions/ajax/glg-admin-ajax.php:139
+msgctxt "plugin"
+msgid "Installed"
+msgstr "स्थापित"
+
+#. translators: 1: Plugin name and version.
+#: inc/functions/ajax/glg-admin-ajax.php:148
+#, php-format
+msgid "More information about %s"
+msgstr "%s के बारे में अधिक जानकारी"
+
+#: inc/functions/ajax/glg-admin-ajax.php:148
+msgid "More Details"
+msgstr "अधिक जानकारी"
+
+#: inc/functions/ajax/glg-admin-ajax.php:220
+msgid "Last Updated:"
+msgstr "अंतिम अद्यतन:"
+
+#: inc/functions/ajax/glg-admin-ajax.php:221
+#, php-format
+msgid "%s ago"
+msgstr "%s पहले"
+
+#: inc/functions/ajax/glg-admin-ajax.php:225
+#, php-format
+msgid "%s download"
+msgid_plural "%s downloads"
+msgstr[0] "%s डाउनलोड करें"
+msgstr[1] "%s डाउनलोड"
+
+#: inc/functions/ajax/glg-admin-ajax.php:230
+msgid "Untested with your version of WordPress"
+msgstr "वर्डप्रेस के आपके संस्करण के साथ अपरीक्षित"
+
+#: inc/functions/ajax/glg-admin-ajax.php:232
+msgid "<strong>Incompatible</strong> with your version of WordPress"
+msgstr "वर्डप्रेस के आपके संस्करण के साथ <strong>असंगत</strong>"
+
+#: inc/functions/ajax/glg-admin-ajax.php:234
+msgid "<strong>Compatible</strong> with your version of WordPress"
+msgstr "वर्डप्रेस के आपके संस्करण के साथ <strong>संगत</strong>"
+
+#: inc/functions/ajax/glg-admin-ajax.php:308
+msgid ""
+"There was an error retrieving the list from the server. Please try again "
+"later."
+msgstr "सर्वर से सूची लाते समय कोई त्रुटि थी। कृपया बाद में पुन: प्रयास करें।"
+
+#: inc/gfg-metabox.php:45
+msgid "Use Lightbox?"
+msgstr "लाइटबॉक्स का उपयोग करें?"
+
+#: inc/gfg-metabox.php:50
+msgid ""
+"If set to YES, all galleries on this page/post will be opened in the lightbox"
+msgstr ""
+"यदि हाँ पर सेट किया गया है, तो इस पृष्ठ/पोस्ट की सभी गैलरी लाइटबॉक्स में खोली जाएंगी"
+
+#: inc/settings/glg-lightbox-settings.php:14
+msgid "General"
+msgstr "सामान्य"
+
+#. translators: %s: review link
+#: inc/settings/glg-lightbox-settings.php:24
+#, php-format
+msgid ""
+"If you use Gallery Lightbox Lite and found it useful then please consider "
+"rating it and leaving your positive feedback %s."
+msgstr ""
+"यदि आप गैलरी लाइटबॉक्स लाइट का उपयोग करते हैं और इसे उपयोगी पाते हैं तो कृपया इसे रेटिंग "
+"देने और अपनी सकारात्मक प्रतिक्रिया %s छोड़ने पर विचार करें।"
+
+#: inc/settings/glg-lightbox-settings.php:26
+msgid "here"
+msgstr "यहाँ"
+
+#: inc/settings/glg-lightbox-settings.php:33
+msgid "Enable Lightbox in All Post/Page"
+msgstr "सभी पोस्ट/पेज में लाइटबॉक्स सक्षम करें"
+
+#: inc/settings/glg-lightbox-settings.php:50
+msgid "Use this option to Enable or Disable the Lightbox in all Post or Page"
+msgstr ""
+"सभी पोस्ट या पेज में लाइटबॉक्स को सक्षम या अक्षम करने के लिए इस विकल्प का उपयोग करें"
+
+#: inc/settings/glg-lightbox-settings.php:55
+msgid "Slideshow Auto Play"
+msgstr "स्लाइड शो ऑटो प्ले"
+
+#: inc/settings/glg-lightbox-settings.php:58
+msgid "Should the lightbox gallery autoplay on start or not"
+msgstr "लाइटबॉक्स गैलरी को स्टार्ट पर ऑटोप्ले करना चाहिए या नहीं"
+
+#: inc/settings/glg-lightbox-settings.php:63
+msgid "Slideshow Interval"
+msgstr "स्लाइड शो अंतराल"
+
+#: inc/settings/glg-lightbox-settings.php:88
+msgid "The time in seconds when autoplaying a gallery. Default 3 seconds"
+msgstr "गैलरी को ऑटोप्ले करते समय सेकंड में समय। डिफ़ॉल्ट 3 सेकंड"
+
+#: inc/settings/glg-lightbox-settings.php:93
+msgid "Show Thumbnails on Bottom"
+msgstr "नीचे थंबनेल दिखाएं"
+
+#: inc/settings/glg-lightbox-settings.php:97
+msgid "Use this option to show / hide gallery thumbnails"
+msgstr "गैलरी थंबनेल दिखाने/छिपाने के लिए इस विकल्प का उपयोग करें"
+
+#: inc/settings/glg-lightbox-settings.php:102
+msgid "Show Thumbnails Caption"
+msgstr "थंबनेल कैप्शन दिखाएं"
+
+#: inc/settings/glg-lightbox-settings.php:106
+msgid "Use this option to show / hide gallery thumbnails caption"
+msgstr "गैलरी थंबनेल कैप्शन दिखाने/छिपाने के लिए इस विकल्प का उपयोग करें"
+
+#: inc/settings/glg-lightbox-settings.php:111
+msgid "Fancy Lightbox Caption"
+msgstr "फैंसी लाइटबॉक्स कैप्शन"
+
+#: inc/settings/glg-lightbox-settings.php:115
+msgid ""
+"If Enabled the plugin will automatically convert uppercase the first "
+"character of each word and replace - with spaces in a title. For example : "
+"ferrari-f12-berlinetta will change to Ferrari F12 Berlinetta"
+msgstr ""
+"यदि सक्षम किया गया प्लगइन स्वचालित रूप से प्रत्येक शब्द के पहले वर्ण को अपरकेस में परिवर्तित "
+"कर देगा और बदल देगा - एक शीर्षक में रिक्त स्थान के साथ। उदाहरण के लिए : फेरारी-f12-"
+"बर्लिनेटा फेरारी F12 बर्लिनेटा में बदल जाएगा"
+
+#: inc/settings/glg-lightbox-settings.php:120
+msgid "Overlay Color"
+msgstr "ओवरले रंग"
+
+#: inc/settings/glg-lightbox-settings.php:122
+msgid "Set your gallery overlay color. Default: #000000 "
+msgstr "अपनी गैलरी ओवरले रंग सेट करें। डिफ़ॉल्ट: #000000 "
+
+#: inc/settings/glg-lightbox-settings.php:135
+msgid "Save Changes"
+msgstr "बदलाव सहेजें"
+
+#: inc/settings/glg-lightbox-settings.php:135
+msgid "Settings Saved"
+msgstr "सेटिंग्स सहेजी गई"
+
+#: inc/settings/pages/glg-docs.php:12
+msgid "Documentation"
+msgstr "प्रलेखन"
+
+#: inc/settings/pages/glg-docs.php:14
+msgid ""
+"There are no complicated instructions for using Gallery Lightbox Lite "
+"because this plugin designed to make all easy. Please watch the following "
+"video and we believe that you will easily to understand it just in minutes."
+msgstr ""
+"गैलरी लाइटबॉक्स लाइट का उपयोग करने के लिए कोई जटिल निर्देश नहीं हैं क्योंकि यह प्लगइन "
+"सभी को आसान बनाने के लिए डिज़ाइन किया गया है। कृपया निम्नलिखित वीडियो देखें और हमें "
+"विश्वास है कि आप इसे मिनटों में आसानी से समझ पाएंगे।"
+
+#: inc/settings/pages/glg-docs.php:16
+msgid "For WordPress with Gallery Block"
+msgstr "गैलरी ब्लॉक के साथ वर्डप्रेस के लिए"
+
+#: inc/settings/pages/glg-docs.php:18
+msgid "For WordPress with Classic Editor"
+msgstr "क्लासिक संपादक के साथ वर्डप्रेस के लिए"
+
+#: inc/settings/pages/glg-free-plugins.php:12
+msgid "Free Install Plugins"
+msgstr "नि: शुल्क प्लग इन्स"
+
+#: inc/settings/pages/glg-free-plugins.php:16
+#: inc/settings/pages/glg-premium-plugins.php:20
+msgid "Retrieving data from server, please wait..."
+msgstr "सर्वर से डेटा पुनर्प्राप्त करना, कृपया प्रतीक्षा करें..."
+
+#: inc/settings/pages/glg-premium-plugins.php:11
+msgid "Premium Plugins"
+msgstr "प्रीमियम प्लगइन्स"
+
+#: inc/settings/pages/glg-premium-plugins.php:13
+msgid ""
+"Take your website to the next level with our Premium Plugins, which gives "
+"you additional features more than you expected."
+msgstr ""
+"हमारे प्रीमियम प्लगइन्स के साथ अपनी वेबसाइट को अगले स्तर पर ले जाएं, जो आपको आपकी "
+"अपेक्षा से अधिक अतिरिक्त सुविधाएँ देता है।"
+
+#. Plugin Name of the plugin/theme
+msgid "Gallery Lightbox Lite"
+msgstr "गैलरी लाइटबॉक्स लाइट"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://ghozylab.com/plugins/"
+msgstr "https://ghozylab.com/plugins/"
+
+#. Description of the plugin/theme
+msgid ""
+"Displays your images gallery into the awesome and responsive lightbox slider "
+"with very easy"
+msgstr ""
+"बहुत आसान के साथ भयानक और उत्तरदायी लाइटबॉक्स स्लाइडर में आपकी छवियों की गैलरी "
+"प्रदर्शित करता है"
+
+#. Author of the plugin/theme
+msgid "GhozyLab, Inc."
+msgstr "घोज़ीलैब, इंक।"

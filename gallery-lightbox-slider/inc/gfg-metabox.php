@@ -1,8 +1,8 @@
 <?php
 
 
-if ( ! defined('ABSPATH') ) {
-	die('Please do not load this file directly.');
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Please do not load this file directly.' );
 }
 
 
@@ -27,7 +27,7 @@ add_action( 'add_meta_boxes', 'glg_add_meta_box' );
 
 /**
  * Prints the box content.
- * 
+ *
  * @param WP_Post $post The object for the current post/page.
  */
 function glg_metabox_markup( $post ) {
@@ -42,12 +42,13 @@ function glg_metabox_markup( $post ) {
 	$value = get_post_meta( $post->ID, 'glg_meta_options', true );
 
 	echo '<label for="glg_activate_lightbox">';
-	_e( 'Use Lightbox?', 'gallery-lightbox-slider' );
+	esc_html_e( 'Use Lightbox?', 'gallery-lightbox-slider' );
 	echo '</label>'; ?>
-	        <select name="glg_activate_lightbox" id="glg_activate_lightbox">
-            <option value="yes" <?php selected( esc_attr( $value ), 'yes' ); ?>>Yes</option>
-            <option value="no" <?php selected( esc_attr( $value ), 'no' ); ?>>No</option>
-     <?php  echo '</select><p style="font-size: 13px;font-style: italic;color:#9d9d9d;font-weight: normal;margin: 5px 0 0 0;">'.__( 'If set to YES, all galleries on this page/post will be opened in the lightbox', 'gallery-lightbox-slider' ).'</p>';
+<select name="glg_activate_lightbox" id="glg_activate_lightbox">
+	<option value="yes" <?php selected( esc_attr( $value ), 'yes' ); ?>>Yes</option>
+	<option value="no" <?php selected( esc_attr( $value ), 'no' ); ?>>No</option>
+	<?php
+	echo '</select><p style="font-size: 13px;font-style: italic;color:#9d9d9d;font-weight: normal;margin: 5px 0 0 0;">' . esc_html__( 'If set to YES, all galleries on this page/post will be opened in the lightbox', 'gallery-lightbox-slider' ) . '</p>';
 }
 
 /**
@@ -83,16 +84,13 @@ function glg_save_meta_box_data( $post_id ) {
 		if ( ! current_user_can( 'edit_page', $post_id ) ) {
 			return;
 		}
+	} elseif ( ! current_user_can( 'edit_post', $post_id ) ) {
 
-	} else {
-
-		if ( ! current_user_can( 'edit_post', $post_id ) ) {
 			return;
-		}
 	}
 
 	/* OK, it's safe for us to save the data now. */
-	
+
 	// Make sure that it is set.
 	if ( ! isset( $_POST['glg_activate_lightbox'] ) ) {
 		return;

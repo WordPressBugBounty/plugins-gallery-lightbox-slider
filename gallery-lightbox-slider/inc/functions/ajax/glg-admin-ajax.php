@@ -75,6 +75,27 @@ function glg_free_plugins_page() {
     
 <div class="wrap">
 <style>
+#glg_free_plugins_page #the-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+#glg_free_plugins_page .plugin-card {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: 0 !important;
+	float: none !important;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#glg_free_plugins_page .plugin-card-top {
+	min-height: 180px !important;
+}
+
 #glg_free_plugins_page .plugin-card .desc > p {
 	margin-right: 0;
 }
@@ -83,6 +104,17 @@ body.rtl #glg_free_plugins_page .plugin-card .desc > p {
 	margin-left: 0;
 }
 
+@media screen and (max-width: 1200px) {
+	#glg_free_plugins_page #the-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 782px) {
+	#glg_free_plugins_page #the-list {
+		grid-template-columns: 1fr;
+	}
+}
 </style>
 <div style="margin-top:30px;" class="wp-list-table widefat plugin-install">
 	<div id="the-list">

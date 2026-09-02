@@ -3,8 +3,8 @@ Contributors: GhozyLab
 Donate link: https://plasso.co/donate@ghozylab.com
 Tags: gallery, gallery lightbox, image slider, slider, image lightbox
 Requires at least: 3.3
-Tested up to: 6.9
-Stable tag: 1.0.0.43
+Tested up to: 7.1
+Stable tag: 1.0.0.45
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -129,11 +129,16 @@ There are no complicated instructions for using Gallery Lightbox plugin because 
 
 == Upgrade Notice ==
 
-= 1.0.0.43 =
+= 1.0.0.45 =
 
 IMPORTANT! SECURITY BUGS FIX, PLEASE UPDATE NOW!
 
 == Changelog ==
+
+= 1.0.0.45 =
+
+* Update : WordPress 7.1 compatibility
+* Fixed : Many other PHP and CSS clean and optimization
 
 = 1.0.0.43 =
 

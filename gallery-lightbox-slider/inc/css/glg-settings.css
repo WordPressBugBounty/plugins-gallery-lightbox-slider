@@ -813,13 +813,49 @@ color: #FFF !important;
             transform:rotate(3deg);
 }
 
-#section_freeplugins .plugin-card {
-    border: 1px solid #d7d7d7 !important;
+#section_freeplugins #the-list,
+#glg_free_plugins_page #the-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
 
-#section_freeplugins .plugin-card-bottom {
-    border-top: 1px solid #c2c2c2 !important;
-	background-color: #efefef !important;
+#section_freeplugins .plugin-card,
+#glg_free_plugins_page .plugin-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  float: none !important;
+  border: 1px solid #d7d7d7 !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#section_freeplugins .plugin-card-top,
+#glg_free_plugins_page .plugin-card-top {
+  min-height: 180px !important;
+}
+
+#section_freeplugins .plugin-card-bottom,
+#glg_free_plugins_page .plugin-card-bottom {
+  border-top: 1px solid #c2c2c2 !important;
+  background-color: #efefef !important;
+}
+
+@media screen and (max-width: 1200px) {
+  #section_freeplugins #the-list,
+  #glg_free_plugins_page #the-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 782px) {
+  #section_freeplugins #the-list,
+  #glg_free_plugins_page #the-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .most_popular {top: -5px;position: absolute;width: 115px;height: 85px;background: transparent url('../images/most_popular.png') no-repeat scroll left top;right: -5px;}
